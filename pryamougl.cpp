@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cmatch>
+#include "pryamougolnik.h"
+using namespace std;
+
+
+int pryamougolnik(){
+	double StoronaA,StoronaB;
+	cout << "Сторона А:" << endl;
+	cout << "Сторона Б:" << endl;
+	cin >> StoronaA;
+	cin >> StoronaB;
+
+	if (!cin.fail()){
+		cout << "---Прямоугольник---" << endl; 
+	 	cout << " Площадь: " << squar(StoronaA, StoronaB) << endl;
+		cout << " Периметр: " << perimetr(StoronaA, StoronaB) << endl;
+		cout << " Диагональ: " << diagonal(StoronaA, StoronaB) << endl;
+	}  else {
+		cout << "ошибка,введите цифру" << endl;
+	}
+
+}
+
+double square( double StoronaA, double StoronaB){
+	return StoronaA * StoronaB;
+}
+
+double perimetr( double StoronaA, double StoronaB){
+	return ( StoronaA + StoronaB) *  2;
+}
+
+double diagonal( double StoronaA, double StoronaB){
+	return sqrt( pow( StoronaA, 2) + pow(StoronaB, 2));
+}
+
+
