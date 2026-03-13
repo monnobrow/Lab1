@@ -1,3 +1,4 @@
+
 #include "triangle.h"
 #include "pryamougolnik.h"
 using namespace std;
