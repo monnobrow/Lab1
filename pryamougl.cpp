@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmatch>
+#include <cmath>
 #include "pryamougolnik.h"
 using namespace std;
 
@@ -13,13 +13,13 @@ int pryamougolnik(){
 
 	if (!cin.fail()){
 		cout << "---Прямоугольник---" << endl; 
-	 	cout << " Площадь: " << squar(StoronaA, StoronaB) << endl;
+	 	cout << " Площадь: " << square(StoronaA, StoronaB) << endl;
 		cout << " Периметр: " << perimetr(StoronaA, StoronaB) << endl;
 		cout << " Диагональ: " << diagonal(StoronaA, StoronaB) << endl;
 	}  else {
 		cout << "ошибка,введите цифру" << endl;
 	}
-
+	return 0;
 }
 
 double square( double StoronaA, double StoronaB){
