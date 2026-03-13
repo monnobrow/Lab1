@@ -11,13 +11,13 @@ int pryamougolnik(){
 	cin >> StoronaA;
 	cin >> StoronaB;
 
-	if (!cin.fail()){
+	if (!cin.fail() && StoronaA > 0 && StoronaB > 0){
 		cout << "---Прямоугольник---" << endl; 
 	 	cout << " Площадь: " << square(StoronaA, StoronaB) << endl;
 		cout << " Периметр: " << perimetr(StoronaA, StoronaB) << endl;
 		cout << " Диагональ: " << diagonal(StoronaA, StoronaB) << endl;
 	}  else {
-		cout << "ошибка,введите цифру" << endl;
+		cout << "ошибка,введите положитетельную  цифру" << endl;
 	}
 	return 0;
 }
