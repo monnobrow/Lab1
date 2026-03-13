@@ -1,7 +1,7 @@
 #include "triangle.h"
 using namespace std;
 double perimetr(double a, double b, double c){
-    return a+b+c;
+    return a+b+c;//no perimetr
 }
 double square(double a, double b, double c){
     double p= perimetr(a, b, c)/2;
